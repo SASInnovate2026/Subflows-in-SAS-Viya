@@ -6,8 +6,8 @@ In this hands-on workshop, you will create a flow to import and clean a table co
 ## Log in to SAS Viya
 Open a new window in the *Google Chrome* browser and select the **SASLanding** bookmark.
 
-    * ID: **student**
-    * Password: **Metadata0**
+* ID: **student**
+* Password: **Metadata0**
 
 Select **No** when prompted about accepting *Admin* privileges.
 
