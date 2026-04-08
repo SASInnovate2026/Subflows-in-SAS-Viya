@@ -3,21 +3,16 @@
 ## Exercise Description
 In this hands-on workshop, you will create a flow to import and clean a table containing car data. Then, you'll use the flow as a subflow in an existing flow that joins and analyzes car data.
 
-## Log in to SAS Viya
-Open a new window in the *Google Chrome* browser and select the **SASLanding** bookmark.
-
-* ID: **student**
-* Password: **Metadata0**
-
-Select **No** when prompted about accepting *Admin* privileges.
-
 ## Workshop Preparation
 
-1. Open a new tab in the *Google Chrome* browser and navigate to https://github.com/login. Sign in to GitHub with the saved profile ***sasInnovate2026Student*** when prompted.
+1. Confirm that the virtual lab opens on the **SAS Studio** *Start Page* in a Google Chrome window.
 
-   ![GitHub student login](images/GitHubStudentLogin.png)
+   ![SAS Studio start](images/SASStudioStart.png)
 
-1. After successfully logging in, navigate to https://github.com/SASInnovate2026/Subflows-in-SAS-Viya.
+1. Open a new tab in the *Google Chrome* browser.
+1. Select **Learning Labs &#10132; Subflows-in-SAS-Viya** to open the GitHub repository for the workshop.
+
+   ![GitHub bookmarks](images/Bookmarks.png)
 
    ![GitHub landing page](images/GitHubLanding.png)
 
@@ -99,7 +94,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Configure standardization as follows:
    * Select column: **WEBSITE**
    * Definition: **Website**
-   * Column options **Replace existing column**
+   * Column options: **Replace existing column**
 
    ![Configure standardization](images/ConfigureStandardization.png)
 
@@ -107,7 +102,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 1. Configure casing as follows:
    * Select column: **PARENT COMPANY**
    * Definition: **Proper (Organization)**
-   * Column options **Replace existing column**
+   * Column options: **Replace existing column**
 
    ![Configure casing](images/ConfigureCasing.png)
 
@@ -120,7 +115,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Select ![Rearrange nodes](images/RearrangeNodes.png) to rearrange the nodes in the flow.
 1. Select ![Save](images/Save.png) to save the flow.
-1. Select ![Run](images/Run.png) to run the flow. Review the **Submitted Code and Results** and confirm that **CAR_MAKE_CLEAN** was created with **3** columns and **37** rows.
+1. Select ![Run](images/Run.png) to run the flow. Review the **Submitted Code and Results &#10132; Output Data** and confirm that **CAR_MAKE_CLEAN** was created with **3** columns and **37** rows.
 
    ![CAR_MAKE_CLEAN Results](images/CAR_MAKE_CLEANResults.png)
 
@@ -148,6 +143,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
    ![Error messages](images/ErrorMessages.png)
 
+1. Select the **Flow** tab to return to the flow canvas.
 1. Select ![Submission Order button](images/SubmissionOrder.png) (on the right side of the flow canvas) to open the *Submission Order* properties pane.
 1. The existing swimlane, *Join Car Data*, appears. Select ![Add swimlane](images/AddSwimlane.png) to add a second swimlane to the flow.
 1. Enter **Import CAR_MAKE_INFO** for the name of the new swimlane (replacing the default name, *Swimlane 2*.)
@@ -162,7 +158,7 @@ Select **No** when prompted about accepting *Admin* privileges.
 
 1. Select ![Save](images/Save.png) to save the flow.
 1. Select ![Run](images/Run.png) to run the flow. The flow now runs successfully.
-1. Review the results of each portion of the flow.
+1. Review the results of each portion of the flow by reviewing the *Output Data* and *Results* on the **Submitted Code and Results** tab.
 
    * The **Query** step creates the output table **CARS_INFO**, which contains 17 columns and 394 rows.
 
